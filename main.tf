@@ -1,5 +1,6 @@
 provider "google" {
   project = "airline1-sabre-wolverine"
+  access_token = var.access_token
 }
 
 resource "google_bigquery_dataset" "dataset" {

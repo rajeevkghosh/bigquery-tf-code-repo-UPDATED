@@ -50,6 +50,6 @@ resource "google_kms_crypto_key" "crypto_key" {
 }
 
 resource "google_kms_key_ring" "key_ring" {
-  name     = "us-dev-abcd-fghi-keyring2"
+  name     = "us-dev-abcd-fghi-keyring3"
   location = "us"
 }

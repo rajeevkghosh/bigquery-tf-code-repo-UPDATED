@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id                  = "example_dataset"
+  dataset_id                  = "us_dev_abcd_fghi_dataset1"
   friendly_name               = "test"
   description                 = "This is a test description"
   location                    = "US"

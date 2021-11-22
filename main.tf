@@ -20,7 +20,7 @@ resource "google_bigquery_dataset" "dataset" {
     data_confidentiality = "pub",
     data_type            = "test",
     environment          = "dev",
-    gcp_region           = "US",
+    gcp_region           = "us",
     owner                = "hybridenv",
   }
 

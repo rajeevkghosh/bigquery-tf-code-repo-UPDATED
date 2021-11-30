@@ -7,7 +7,7 @@ resource "google_bigquery_dataset" "dataset" {
   dataset_id                  = "dev_abcd_fghi_dataset2"
   friendly_name               = "test"
   description                 = "This is a test description"
-  location                    = "US"
+  location                    = "asia-south1"
   default_table_expiration_ms = 3600000
   labels = {
     env                  = "default"
@@ -25,7 +25,7 @@ resource "google_bigquery_dataset" "dataset" {
   }
 
   default_encryption_configuration {
-    kms_key_name = google_kms_crypto_key.crypto_key.id
+    #kms_key_name = google_kms_crypto_key.crypto_key.id
   }
 }
 

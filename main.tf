@@ -24,9 +24,9 @@ resource "google_bigquery_dataset" "dataset" {
     owner                = "hybridenv",
   }
 
-  default_encryption_configuration {
-    #kms_key_name = google_kms_crypto_key.crypto_key.id
-  }
+  /*default_encryption_configuration {
+    kms_key_name = google_kms_crypto_key.crypto_key.id
+  }*/
 }
 
 resource "google_kms_crypto_key" "crypto_key" {

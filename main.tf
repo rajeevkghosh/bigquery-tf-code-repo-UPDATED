@@ -10,7 +10,7 @@ resource "google_bigquery_dataset" "dataset" {
   location                    = "asia-south1"
   default_table_expiration_ms = 3600000
   labels = {
-    env                  = "default"
+    env = "default"
     #application_division = "pci",
     application_name     = "demo",
     application_role     = "app",
@@ -27,6 +27,7 @@ resource "google_bigquery_dataset" "dataset" {
   /*default_encryption_configuration {
     kms_key_name = google_kms_crypto_key.crypto_key5.id
   }*/
+}
 
 resource "google_kms_crypto_key" "crypto_key5" {
   name = "us-dev-abcd-fghi-cryptokey5"

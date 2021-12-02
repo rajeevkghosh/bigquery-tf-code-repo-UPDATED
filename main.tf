@@ -25,11 +25,11 @@ resource "google_bigquery_dataset" "dataset" {
   }
 
   default_encryption_configuration {
-    kms_key_name = google_kms_crypto_key.crypto_key3.id
+    kms_key_name = google_kms_crypto_key.crypto_key5.id
   }
 }
 
-resource "google_kms_crypto_key" "crypto_key3" {
+resource "google_kms_crypto_key" "crypto_key5" {
   name = "us-dev-abcd-fghi-cryptokey"
   labels = {
     env                  = "default"

@@ -30,7 +30,7 @@ resource "google_bigquery_dataset" "dataset" {
 }
 
 resource "google_kms_crypto_key" "crypto_key5" {
-  name = "us-dev-abcd-fghi-cryptokey"
+  name = "us-dev-abcd-fghi-cryptokey5"
   labels = {
     env                  = "default"
     application_division = "pci",

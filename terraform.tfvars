@@ -1,0 +1,6 @@
+key_path           = "/tmp"
+project            = "airline1-sabre-wolverine"
+keyring_name       = "us-dev-abcd-fghi-keyring-bq2"
+keyring_location   = "us"
+keyring_key_name   = "us-dev-abcd-fghi-cryptokey_bq4"
+keyring_import_job = "my-import-job2"

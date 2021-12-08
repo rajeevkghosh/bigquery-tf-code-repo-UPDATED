@@ -30,7 +30,7 @@ resource "google_bigquery_dataset" "dataset" {
 }
 
 data "google_kms_crypto_key" "cryptokey" {
-  name = "us-dev-abcd-fghi-cryptokey2"
+  name     = "us-dev-abcd-fghi-cryptokey2"
   key_ring = data.google_kms_key_ring.keyring.id
 }
 

@@ -25,7 +25,7 @@ resource "google_bigquery_dataset" "dataset" {
   }
 
   default_encryption_configuration {
-    kms_key_name = google_kms_crypto_key.cryptokey.id
+    kms_key_name = data.google_kms_crypto_key.cryptokey.id
   }
 }
 

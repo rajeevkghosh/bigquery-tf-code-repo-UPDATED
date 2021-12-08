@@ -1,5 +1,0 @@
-project            = "airline1-sabre-wolverine"
-dataset_id         = "us_dev_abcd_fghi_dataset2_bqds3"
-keyring_name       = "us-dev-abcd-fghi-keyring-bq1"
-keyring_location   = "us"
-keyring_key_name   = "us-dev-abcd-fghi-cryptokey2"

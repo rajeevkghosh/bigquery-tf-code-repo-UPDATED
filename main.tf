@@ -1,10 +1,10 @@
 provider "google" {
-  project      = var.project
+  project      = "airline1-sabre-wolverine"
   access_token = var.access_token
 }
 
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id                  = var.dataset_id
+  dataset_id                  = "us_dev_abcd_fghi_dataset2_bqds3"
   friendly_name               = "test"
   description                 = "This is a test description"
   location                    = "US"
@@ -30,11 +30,11 @@ resource "google_bigquery_dataset" "dataset" {
 }
 
 data "google_kms_crypto_key" "cryptokey" {
-  name = var.keyring_key_name
+  name = "us-dev-abcd-fghi-cryptokey2"
   key_ring = data.google_kms_key_ring.keyring.id
 }
 
 data "google_kms_key_ring" "keyring" {
-  name     = var.keyring_name
-  location = var.keyring_location
+  name     = "us-dev-abcd-fghi-keyring-bq1"
+  location = "us"
 }

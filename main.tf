@@ -10,15 +10,11 @@ resource "google_bigquery_dataset" "dataset" {
   location                    = "US"
   default_table_expiration_ms = 3600000
   labels = {
-    #env                  = "default"
     application_division = "pci",
     application_name     = "demo",
     application_role     = "app",
     au                   = "0223092",
     created              = "20211122",
-    #data_compliance      = "pci",
-    #data_confidentiality = "pub",
-    #data_type            = "test",
     environment          = "dev",
     gcp_region           = "us",
     owner                = "hybridenv",

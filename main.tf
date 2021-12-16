@@ -5,6 +5,7 @@ provider "google" {
 
 resource "google_bigquery_dataset" "dataset" {
   dataset_id                  = "us_dev_abcd_fghi_dataset2_bqds3"
+  dataset_id                  = "wf_us_prod_bq_app01_res01"
   friendly_name               = "test"
   description                 = "This is a test description"
   location                    = "US"
@@ -15,7 +16,7 @@ resource "google_bigquery_dataset" "dataset" {
     application_role     = "app",
     au                   = "0223092",
     created              = "20211122",
-    environment          = "dev",
+    environment          = "nonprod",
     gcp_region           = "us",
     owner                = "hybridenv",
   }

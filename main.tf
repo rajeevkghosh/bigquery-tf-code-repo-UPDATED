@@ -4,7 +4,6 @@ provider "google" {
 }
 
 resource "google_bigquery_dataset" "dataset" {
-  #dataset_id                  = "us_dev_abcd_fghi_dataset2_bqds3"
   dataset_id                  = "wf_us_prod_bq_app01_res01"
   friendly_name               = "test"
   description                 = "This is a test description"
@@ -27,11 +26,11 @@ resource "google_bigquery_dataset" "dataset" {
 }
 
 data "google_kms_crypto_key" "cryptokey" {
-  name     = "us-dev-abcd-fghi-cryptokey2"
+  name     = "wf-us-prod-kms-app01-res0301"
   key_ring = data.google_kms_key_ring.keyring.id
 }
 
 data "google_kms_key_ring" "keyring" {
-  name     = "us-dev-abcd-fghi-keyring-bq1"
+  name     = "wf-us-prod-kms-app01-res03"
   location = "us"
 }
